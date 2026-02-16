@@ -1,3 +1,7 @@
+"""
+Tests for the Fingerprint class.
+"""
+
 import unittest
 import sys
 

@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
 """
-HW5: Fingerprint Processing - implement the `Fingerprint` class as described in README.md
+Stores data for a user's fingerprint, including the pixel data and metadata such as name and year.
 """
 from typing import TypeVar
 
@@ -30,5 +29,13 @@ class Fingerprint:
     @classmethod
     def from_file(cls: type[T], filename: str) -> T:
         """
-        Create a Fingerprint object by reading fingerprint data from the file."""
+        Create a Fingerprint object by reading fingerprint data from the file.
+        
+        Args:
+            filename (str): The path to the file containing the fingerprint data.
+        
+        Returns:
+            Fingerprint: A new instance of the Fingerprint class initialized with 
+                the data from the file
+        """
         pass
