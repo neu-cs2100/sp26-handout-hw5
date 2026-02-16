@@ -13,15 +13,12 @@ Welcome to the Biometric Fingerprint Processing assignment! In this project, you
 
 ## Learning Objectives
 
-- Reading and processing data from files
 - Working with 2D lists in Python
 - Implementing a class following a UML diagram
 - Overwriting `__eq__()`
-- Creating custom exceptions
+- Creating and raising custom errors
 - Using `@classmethod` to write alternative constructors
 - Using a class variable
-- Adding properties to a class
-- Building an incident response system for authentication
 
 ## NOTE: Open the entire folder in VSCode, not individual files
 In VSCode, open this assignment through `File` > `Open Folder...` > open the entire repo. Do not open individual files. Opening the entire folder makes it so that:
