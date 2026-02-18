@@ -52,7 +52,7 @@ The reason we need to store the number of rows and columns (rather than calculat
 
 - Give the `Fingerprint` class a class variable called `match_threshold`, which represents the threshold for considering a fingerprint match successful. It should have a default value of 0.9.
 - `Fingerprint`'s constructor should take and store the data, name, year, number of rows, and number of columns. Make sure to store a copy of the data, rather than an alias of the data.
-- Add an "alternative constructor" for the `Fingerprint` class (using `@classmethod`) called `from_file`, which takes a file name and creates a `Fingerprint` using the data in the provided file. Make sure the alternative constructor will work for any subclasses of `Fingerprint`.
+- Add an alternative constructor for the `Fingerprint` class (using `@classmethod`) called `from_file`, which takes a file name and creates a `Fingerprint` using the data in the provided file.
 - Implement the properties `image`, `rows`, `cols`, `name`, and `year`
 - Overwrite the `__str__()` method to return a string of the format: `"Fingerprint for: Mini. Year recorded: 2025"` (the name and year will be replaced)
 - Overwrite the `__eq__()` method to:
