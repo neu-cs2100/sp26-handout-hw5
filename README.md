@@ -63,7 +63,7 @@ The reason we need to store the number of rows and columns (rather than calculat
 Don't forget to write tests in `test_fingerprint.py`!
 
 ## Part 2: The `Login` class in `login.py`
-- Above the `Login` class, create a class called `MaxTriesExceededError` which is a custom error.
+- Above the `Login` class, notice that there is a class called `MaxTriesExceededError` which is our own custom error.
 - The `Login` constructor should take and store the original user's fingerprint, and the setting for the number of tries that a user can attempt and fail before being locked out. It should also create a private attribute (two underscores) for the number of failed attempts that a user has made so far.
 - `Login`'s `authenticate()` method should take a `Fingerprint` and:
   - if the number of attempts made by the user until now is at least the maximum number of tries allowed, raise a `MaxTriesExceededError`
