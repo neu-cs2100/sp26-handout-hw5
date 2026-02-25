@@ -68,7 +68,7 @@ Don't forget to write tests in `test_fingerprint.py`!
   - if the number of attempts made by the user until now is at least the maximum number of tries allowed, raise a `MaxTriesExceededError`
   - set `Fingerprint`'s `match_threshold` to the provided `match_threshold` argument provided to the `authenticate()` method
   - if the provided `Fingerprint` is equal to the `original Fingerprint` (within the threshold), reset the number of failed attempts to 0 and return `True`
-  - otherwise, increment the number of failed attempts, print `"Authentication failed"`, possibly raise a `MaxTriesExceededError` (if the number of attempts made is now at least the maximum number of attempts allowed), and return `False`
+  - otherwise, increment the number of failed attempts. Then, raise a `MaxTriesExceededError` if the number of attempts made is now at least the maximum number of attempts allowed, and return `False` if it is not
 
 Don't forget to write tests in `test_login.py`!
 
