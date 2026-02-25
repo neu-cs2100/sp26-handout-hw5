@@ -19,6 +19,10 @@ class Fingerprint:
             year (int): Year the fingerprint was recorded
             rows (int): Number of rows in the fingerprint data
             cols (int): Number of columns in the fingerprint data
+        
+        Raises:
+            ValueError: If the data does not have the specified number of rows, or if
+                    any row has more than the specified number of columns.
         """
         pass
 
@@ -33,5 +37,8 @@ class Fingerprint:
         Returns:
             Fingerprint: A new instance of the Fingerprint class initialized with 
                 the data from the file
+        
+        Raises:
+            FileNotFoundError: If the specified file does not exist.
         """
         pass
