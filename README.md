@@ -14,7 +14,6 @@ Welcome to the Biometric Fingerprint Processing assignment! In this project, you
 ## Learning Objectives
 
 - Working with 2D lists in Python
-- Implementing a class following a UML diagram
 - Overwriting `__eq__()`
 - Creating and raising custom errors
 - Using `@classmethod` to write alternative constructors
@@ -49,10 +48,6 @@ The reason we need to store the number of rows and columns (rather than calculat
 You can assume that every fingerprint text file follows the same format, and you do not need to check for mis-formatted files.
 
 ## Part 1: The `Fingerprint` class in `fingerprint.py`
-
-### `Fingerprint` UML Diagram:
-![Fingerprint UML Diagram](Fingerprint_UML.png)
-
 
 - Give the `Fingerprint` class a class variable called `match_threshold`, which represents the threshold for considering a fingerprint match successful. It should have a default value of 0.9.
 - `Fingerprint`'s constructor should take and store the data, name, year, number of rows, and number of columns. Make sure to store a copy of the data, rather than an alias of the data.
