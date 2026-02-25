@@ -36,6 +36,7 @@ Fingerprint text files are in the `data` folder.
 - `variation1.txt`, `variation2.txt` and so on are variations of `Original.txt`, to be used for testing within an error threshold.
 
 The first four lines of each fingerprint text file contain:
+
 1. the user's name
 2. the year that the fingerprint was recorded
 3. the number of rows of data
@@ -44,6 +45,8 @@ The first four lines of each fingerprint text file contain:
 The lines after that are the pixels of the fingerprint image. Each character is a pixel.
 
 The reason we need to store the number of rows and columns (rather than calculating them from the length of the data) is so that we can ignore the whitespace (spaces, tabs, and newline characters) in the data. The whitespace is not always exactly correct.
+
+You can assume that every fingerprint text file follows the same format, and you do not need to check for mis-formatted files.
 
 ## Part 1: The `Fingerprint` class in `fingerprint.py`
 
