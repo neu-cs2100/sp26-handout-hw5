@@ -8,6 +8,7 @@
 ## Overview
 
 This assignment is based on [this Nifty Assignment](http://nifty.stanford.edu/2024/servin-alonso-garcia-fingerprint/).
+Our version of the assignment is heavily modified, including changing the language from Java to Python.
 
 Welcome to the Biometric Fingerprint Processing assignment! In this project, you will store and use biometric fingerprint information for authentication. You'll implement a fingerprint processing system that can read, store, display, and compare fingerprint data.
 
@@ -57,7 +58,8 @@ You can assume that every fingerprint text file follows the same format, and you
 - Overwrite the `__eq__()` method to:
   - Return `False` if `other` is not a `Fingerprint`
   - Return `False` if `other` has a different number of rows or columns (from lines 3 and 4 of the data text file)
-  - Return `True` if the percentage of pixels which are equal between the two `Fingerprint`s is at least `match_threshold`
+  - Return `True` if the match accuracy between the two `Fingerprint`s is at least `match_threshold`.
+    - The match accuracy is defined as `match_count / total_pixels`, where `total_pixels` is the number of rows times the number of columns (from lines 3 and 4 of the data text file), and `match_count` is the number of fingerprint pixels that have the same character in the two fingerprint data lists.
 
 Don't forget to write tests in `test_fingerprint.py`!
 
