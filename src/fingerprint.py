@@ -1,7 +1,6 @@
 """
 Stores data for a user's fingerprint, including the pixel data and metadata such as name and year.
 """
-from typing import TypeVar
 from __future__ import annotations
 
 class Fingerprint:
