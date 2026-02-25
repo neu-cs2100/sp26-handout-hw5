@@ -2,11 +2,7 @@
 Stores data for a user's fingerprint, including the pixel data and metadata such as name and year.
 """
 from typing import TypeVar
-
-T = TypeVar(
-    "T", bound="Fingerprint"
-)  # Generic type that must be a subclass of Fingerprint
-
+from __future__ import annotations
 
 class Fingerprint:
     """Class to represent a fingerprint with associated metadata."""
@@ -27,7 +23,7 @@ class Fingerprint:
         pass
 
     @classmethod
-    def from_file(cls: type[T], filename: str) -> T:
+    def from_file(cls: type[Fingerprint], filename: str) -> Fingerprint:
         """
         Create a Fingerprint object by reading fingerprint data from the file.
         
