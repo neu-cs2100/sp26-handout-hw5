@@ -58,7 +58,7 @@ The reason we need to store the number of rows and columns (rather than calculat
 - Overwrite the `__str__()` method to return a string of the format: `"Fingerprint for: Mini. Year recorded: 2025"` (the name and year will be replaced)
 - Overwrite the `__eq__()` method to:
   - Return `False` if `other` is not a `Fingerprint`
-  - Return `False` if `other` has a different number of rows and columns
+  - Return `False` if `other` has a different number of rows or columns (from lines 3 and 4 of the data text file)
   - Return `True` if the percentage of pixels which are equal between the two `Fingerprint`s is at least `match_threshold`
 
 Don't forget to write tests in `test_fingerprint.py`!
