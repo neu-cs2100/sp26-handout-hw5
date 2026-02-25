@@ -40,6 +40,7 @@ The first four lines of each fingerprint text file contain:
 2. the year that the fingerprint was recorded
 3. the number of rows of data
 4. the number of columns of data
+
 The lines after that are the pixels of the fingerprint image. Each character is a pixel.
 
 The reason we need to store the number of rows and columns (rather than calculating them from the length of the data) is so that we can ignore the whitespace (spaces, tabs, and newline characters) in the data. The whitespace is not always exactly correct.
